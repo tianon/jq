@@ -99,10 +99,6 @@ typedef enum {
 #define JVP_FLAGS_FALSE     JVP_MAKE_FLAGS(JV_KIND_FALSE, JVP_PAYLOAD_NONE)
 #define JVP_FLAGS_TRUE      JVP_MAKE_FLAGS(JV_KIND_TRUE, JVP_PAYLOAD_NONE)
 
-jv_kind jv_get_kind(jv x) {
-  return JVP_KIND(x);
-}
-
 const char* jv_kind_name(jv_kind k) {
   switch (k) {
   case JV_KIND_INVALID: return "<invalid>";
